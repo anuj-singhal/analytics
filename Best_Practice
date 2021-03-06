@@ -48,6 +48,8 @@ Best practices:
 
 8. Continous Deployment
 	- Use CD to deploy automatic if build success.
+	- https://docs.travis-ci.com/
+	- https://travis-ci.com/github/anuj-singhal/covid19-analytics
 	
 	
 
