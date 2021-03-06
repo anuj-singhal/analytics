@@ -42,11 +42,11 @@ class MyTestCase(unittest.TestCase):
 
     def test_count_available_vaccines(self):
         assert job.count_available_vaccines(self.create_sample(sample1)) == 3
-        assert job.count_available_vaccines(self.create_sample(sample2)) == 2
+        assert job.count_available_vaccines(self.create_sample(sample2)) == 3
         assert job.count_available_vaccines(self.create_sample(sample3)) == 3
 
     def test_earliest_used_vaccine(self):
-        assert job.find_earliest_used_vaccine(self.create_sample(sample1)) == "SputnikV"
+        assert job.find_earliest_used_vaccine(self.create_sample(sample1)) == "Sputnik V"
         assert job.find_earliest_used_vaccine(self.create_sample(sample2)) == "Oxford/AstraZeneca, Pfizer/BioNTech"
         assert job.find_earliest_used_vaccine(self.create_sample(sample3)) == "Oxford/AstraZeneca, Pfizer/BioNTech"
 
@@ -55,7 +55,7 @@ class MyTestCase(unittest.TestCase):
         assert total_vaccinations == {'Russia': 800000, 'UK': 1407251, 'US': 10000}
 
         total_vaccinations = job.total_vaccinations_per_country(self.create_sample(sample2)).rdd.collectAsMap()
-        assert total_vaccinations == {'Costa Rica': 29389.0, 'Italy': 123212.0, 'Luxembourg': 1943.0}
+        assert total_vaccinations == {'Costa Rica': 29389.0, 'Italy': 123211.0, 'Luxembourg': 1943.0}
 
         total_vaccinations = job.total_vaccinations_per_country(self.create_sample(sample3)).rdd.collectAsMap()
         assert total_vaccinations == {'Austria': 191798.0, 'Iceland': 15522.0, 'Romania': 389507.0, 'Slovenia': 61679.0,
