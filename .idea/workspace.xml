@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7136bdb3-d4ea-404e-b081-2051a78dc58a" name="Default Changelist" comment="" />
+    <list default="true" id="7136bdb3-d4ea-404e-b081-2051a78dc58a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/tests/test_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test_pipeline.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
