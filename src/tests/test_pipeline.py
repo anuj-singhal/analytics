@@ -37,10 +37,6 @@ sample3 = [
     ['Scotland', '28/12/20', 0.0, 'Oxford/AstraZeneca, Pfizer/BioNTech']
 ]
 
-sample4 = [
-    ['Italy', '3/1/21', 123211.0, 'Moderna, Pfizer/BioNTech'],
-    ['Cayman Islands', '9/1/21', 0.0, 'Pfizer/BioNTech']
-]
 
 def create_sample(sample):
     return job.spark.createDataFrame(data=sample, schema=schema)
@@ -56,7 +52,6 @@ def test_count_available_vaccines():
     assert job.count_available_vaccines(create_sample(sample1)) == 3
     assert job.count_available_vaccines(create_sample(sample2)) == 3
     assert job.count_available_vaccines(create_sample(sample3)) == 3
-    assert job.count_available_vaccines(create_sample(sample4)) == 2
 
 
 @pytest.mark.filterwarnings("ignore")
