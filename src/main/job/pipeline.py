@@ -32,10 +32,5 @@ class PySparkJob(PySparkJobInterface):
 
     def total_vaccinations_per_country(self, vaccines: DataFrame) -> DataFrame:
         # Get the total vaccine available for each country
-
-        # filter total vaccinations where data not available
-        vaccines = vaccines.filter(F.col('total_vaccinations') > 0)
-
-        # Aggregate dataset based on country and get the sum of total vaccines
-        df_total = vaccines.groupBy("country").agg(F.sum("total_vaccinations").alias('total_vaccinations'))
-        return df_total
+        ...
+        
