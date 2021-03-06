@@ -1,3 +1,11 @@
+########################################################################
+# Owner: john magrini
+# Frequency: daily
+# Job Description: app.py will take the argument of a file
+# and calculate the count, earliest vaccine and total vaccine
+# available in a country
+########################################################################
+
 import sys
 from main.job.pipeline import PySparkJob
 

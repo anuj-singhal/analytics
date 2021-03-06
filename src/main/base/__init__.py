@@ -1,3 +1,8 @@
+########################################################################
+# Owner: Anuj Singhal
+# Description: Abstract class of unimplemented methods of logic
+########################################################################
+
 import abc
 from pyspark.sql import SparkSession, DataFrame
 
