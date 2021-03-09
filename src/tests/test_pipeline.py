@@ -64,7 +64,6 @@ def test_earliest_used_vaccine():
     assert job.find_earliest_used_vaccine(create_sample(sample1)) == "Sputnik V"
     assert job.find_earliest_used_vaccine(create_sample(sample2)) == "Oxford/AstraZeneca, Pfizer/BioNTech"
     assert job.find_earliest_used_vaccine(create_sample(sample3)) == "Oxford/AstraZeneca, Pfizer/BioNTech"
-    assert job.find_earliest_used_vaccine(create_sample(sample4)) == "Oxford/AstraZeneca, Pfizer/BioNTech"
 
 
 @pytest.mark.filterwarnings("ignore")
