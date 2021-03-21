@@ -51,12 +51,12 @@ def test_init_spark_session():
     assert isinstance(job.spark, SparkSession), "-- spark session not implemented"
 
 
-@pytest.mark.filterwarnings("ignore")
-def test_count_available_vaccines():
-    assert job.count_available_vaccines(create_sample(sample1)) == 3
-    assert job.count_available_vaccines(create_sample(sample2)) == 3
-    assert job.count_available_vaccines(create_sample(sample3)) == 3
-    assert job.count_available_vaccines(create_sample(sample4)) == 2
+#@pytest.mark.filterwarnings("ignore")
+#def test_count_available_vaccines():
+#    assert job.count_available_vaccines(create_sample(sample1)) == 3
+#    assert job.count_available_vaccines(create_sample(sample2)) == 3
+#    assert job.count_available_vaccines(create_sample(sample3)) == 3
+#    assert job.count_available_vaccines(create_sample(sample4)) == 2
 
 
 @pytest.mark.filterwarnings("ignore")
